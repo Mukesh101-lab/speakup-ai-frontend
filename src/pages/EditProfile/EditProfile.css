@@ -1,0 +1,562 @@
+
+/* ==========================================
+   EDIT PROFILE PAGE
+========================================== */
+
+.edit-profile-page {
+    min-height: calc(100vh - 80px);
+    padding: 50px 20px 70px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #f8fafc 0%,
+            #eef4ff 100%
+        );
+
+    box-sizing: border-box;
+}
+
+
+/* ==========================================
+   CONTAINER
+========================================== */
+
+.edit-profile-container {
+    width: 100%;
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+
+/* ==========================================
+   HEADER
+========================================== */
+
+.edit-profile-header {
+    text-align: center;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+
+/* ==========================================
+   BACK LINK
+========================================== */
+
+.back-link {
+    display: inline-flex;
+    align-items: center;
+
+    margin-bottom: 25px;
+
+    color: #2563eb;
+
+    text-decoration: none;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    transition: 0.2s ease;
+}
+
+.back-link:hover {
+    color: #1d4ed8;
+    transform: translateX(-3px);
+}
+
+
+/* ==========================================
+   AVATAR
+========================================== */
+
+.profile-avatar {
+    width: 90px;
+    height: 90px;
+
+    margin: 0 auto 18px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background:
+        linear-gradient(
+            135deg,
+            #2563eb,
+            #4f46e5
+        );
+
+    color: #ffffff;
+
+    font-size: 36px;
+    font-weight: 700;
+
+    box-shadow:
+        0 10px 25px rgba(37, 99, 235, 0.25);
+}
+
+
+/* ==========================================
+   TITLE
+========================================== */
+
+.edit-profile-header h1 {
+    margin: 0;
+
+    color: #111827;
+
+    font-size: 32px;
+    line-height: 1.2;
+    font-weight: 750;
+}
+
+
+/* ==========================================
+   SUBTITLE
+========================================== */
+
+.edit-profile-header p {
+    margin: 10px 0 0;
+
+    color: #6b7280;
+
+    font-size: 15px;
+}
+
+
+/* ==========================================
+   CARD
+========================================== */
+
+.edit-profile-card {
+    width: 100%;
+
+    background: #ffffff;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 18px;
+
+    padding: 32px;
+
+    box-sizing: border-box;
+
+    box-shadow:
+        0 15px 40px rgba(15, 23, 42, 0.08);
+}
+
+
+/* ==========================================
+   FORM
+========================================== */
+
+.edit-profile-form {
+    width: 100%;
+}
+
+
+/* ==========================================
+   FORM GROUP
+========================================== */
+
+.form-group {
+    margin-bottom: 24px;
+}
+
+
+/* ==========================================
+   LABEL
+========================================== */
+
+.form-group label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: #111827;
+
+    font-size: 14px;
+    font-weight: 650;
+}
+
+
+/* ==========================================
+   INPUT
+========================================== */
+
+.form-group input {
+    width: 100%;
+
+    height: 50px;
+
+    padding: 0 15px;
+
+    box-sizing: border-box;
+
+    border: 1px solid #d1d5db;
+
+    border-radius: 10px;
+
+    background: #ffffff;
+
+    color: #111827;
+
+    font-size: 15px;
+
+    outline: none;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+/* ==========================================
+   INPUT FOCUS
+========================================== */
+
+.form-group input:focus {
+    border-color: #2563eb;
+
+    box-shadow:
+        0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+
+/* ==========================================
+   DISABLED EMAIL
+========================================== */
+
+.form-group input.disabled-input {
+    background: #f3f4f6;
+
+    color: #6b7280;
+
+    cursor: not-allowed;
+}
+
+
+/* ==========================================
+   INPUT HINT
+========================================== */
+
+.input-hint {
+    display: block;
+
+    margin-top: 7px;
+
+    color: #9ca3af;
+
+    font-size: 12px;
+
+    line-height: 1.5;
+}
+
+
+/* ==========================================
+   MESSAGES
+========================================== */
+
+.profile-message {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 13px 15px;
+
+    margin-bottom: 22px;
+
+    border-radius: 10px;
+
+    font-size: 14px;
+
+    line-height: 1.4;
+}
+
+
+/* ==========================================
+   ERROR
+========================================== */
+
+.error-message {
+    background: #fef2f2;
+
+    border: 1px solid #fecaca;
+
+    color: #b91c1c;
+}
+
+
+/* ==========================================
+   SUCCESS
+========================================== */
+
+.success-message {
+    background: #f0fdf4;
+
+    border: 1px solid #bbf7d0;
+
+    color: #15803d;
+}
+
+
+/* ==========================================
+   MESSAGE ICON
+========================================== */
+
+.message-icon {
+    flex-shrink: 0;
+
+    font-size: 17px;
+}
+
+
+/* ==========================================
+   ACTION BUTTONS
+========================================== */
+
+.form-actions {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    margin-top: 30px;
+}
+
+
+/* ==========================================
+   CANCEL BUTTON
+========================================== */
+
+.cancel-btn {
+    flex: 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 50px;
+
+    padding: 0 20px;
+
+    box-sizing: border-box;
+
+    border: 1px solid #d1d5db;
+
+    border-radius: 10px;
+
+    background: #ffffff;
+
+    color: #374151;
+
+    text-decoration: none;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    transition: all 0.2s ease;
+}
+
+.cancel-btn:hover {
+    background: #f9fafb;
+
+    border-color: #9ca3af;
+}
+
+
+/* ==========================================
+   UPDATE PROFILE BUTTON
+========================================== */
+
+.update-profile-btn {
+    flex: 1;
+
+    min-height: 50px;
+
+    padding: 0 20px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #2563eb,
+            #4f46e5
+        );
+
+    color: #ffffff;
+
+    font-size: 15px;
+    font-weight: 650;
+
+    cursor: pointer;
+
+    transition: all 0.2s ease;
+
+    box-shadow:
+        0 6px 15px rgba(37, 99, 235, 0.20);
+}
+
+
+.update-profile-btn:hover {
+    transform: translateY(-1px);
+
+    box-shadow:
+        0 8px 18px rgba(37, 99, 235, 0.28);
+}
+
+
+.update-profile-btn:active {
+    transform: translateY(0);
+}
+
+
+.update-profile-btn:disabled {
+    opacity: 0.65;
+
+    cursor: not-allowed;
+
+    transform: none;
+
+    box-shadow: none;
+}
+
+
+/* ==========================================
+   SECURITY NOTE
+========================================== */
+
+.profile-security-note {
+    margin: 20px 0 0;
+
+    text-align: center;
+
+    color: #9ca3af;
+
+    font-size: 12px;
+}
+
+
+/* ==========================================
+   TABLET
+========================================== */
+
+@media (max-width: 700px) {
+
+    .edit-profile-page {
+        padding: 35px 16px 55px;
+    }
+
+    .edit-profile-card {
+        padding: 25px 20px;
+    }
+
+    .edit-profile-header h1 {
+        font-size: 28px;
+    }
+
+}
+
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width: 480px) {
+
+    .edit-profile-page {
+        padding: 25px 12px 45px;
+    }
+
+
+    .edit-profile-header {
+        margin-bottom: 22px;
+    }
+
+
+    .back-link {
+        margin-bottom: 20px;
+    }
+
+
+    .profile-avatar {
+        width: 76px;
+        height: 76px;
+
+        font-size: 30px;
+    }
+
+
+    .edit-profile-header h1 {
+        font-size: 25px;
+    }
+
+
+    .edit-profile-header p {
+        font-size: 14px;
+    }
+
+
+    .edit-profile-card {
+        padding: 22px 16px;
+
+        border-radius: 15px;
+    }
+
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+
+    .form-group input {
+        height: 48px;
+
+        font-size: 14px;
+    }
+
+
+    .form-actions {
+        flex-direction: column-reverse;
+
+        gap: 10px;
+    }
+
+
+    .cancel-btn,
+    .update-profile-btn {
+        width: 100%;
+
+        flex: none;
+
+        min-height: 48px;
+    }
+
+}
+
+
+/* ==========================================
+   SMALL MOBILE
+========================================== */
+
+@media (max-width: 350px) {
+
+    .edit-profile-card {
+        padding: 18px 13px;
+    }
+
+    .edit-profile-header h1 {
+        font-size: 23px;
+    }
+
+}
+

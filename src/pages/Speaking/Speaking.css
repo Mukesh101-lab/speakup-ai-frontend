@@ -1,0 +1,656 @@
+.speaking-page {
+    min-height: 100vh;
+    padding: 50px 20px;
+    background: #f7f8fc;
+}
+
+.speaking-container {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+
+/* ==========================================
+   HEADER
+========================================== */
+
+.speaking-header {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.speaking-header h1 {
+    margin: 0 0 10px;
+    font-size: 36px;
+    color: #111827;
+}
+
+.speaking-header p {
+    margin: 0;
+    color: #6b7280;
+    font-size: 16px;
+}
+
+
+/* ==========================================
+   SPEAKING CARD
+========================================== */
+
+.speaking-card {
+    background: #ffffff;
+    padding: 28px;
+    border-radius: 22px;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.08);
+}
+
+
+/* ==========================================
+   MICROPHONE AREA
+========================================== */
+
+.mic-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: 10px 0 28px;
+}
+
+
+/* ==========================================
+   CIRCULAR MICROPHONE BUTTON
+========================================== */
+
+.mic-button {
+    position: relative;
+
+    width: 96px;
+    height: 96px;
+
+    padding: 0;
+
+    border: none;
+    border-radius: 50%;
+
+    background: #6366f1;
+    color: #ffffff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 12px 30px rgba(99, 102, 241, 0.35);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        background 0.25s ease;
+}
+
+
+/* Hover */
+
+.mic-button:hover {
+    transform: translateY(-3px) scale(1.06);
+
+    box-shadow:
+        0 16px 35px rgba(99, 102, 241, 0.45);
+}
+
+
+/* Click */
+
+.mic-button:active {
+    transform: scale(0.94);
+}
+
+
+/* ==========================================
+   MICROPHONE ICON
+========================================== */
+
+.mic-icon {
+    font-size: 42px;
+
+    line-height: 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+    z-index: 2;
+}
+
+
+/* ==========================================
+   MICROPHONE STATUS
+========================================== */
+
+.mic-status {
+    margin: 14px 0 0;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    color: #6b7280;
+}
+
+
+/* ==========================================
+   LISTENING STATE
+========================================== */
+
+.mic-button.listening {
+    background: #ef4444;
+
+    animation: micPulse 1.6s infinite;
+}
+
+
+/* First outer ring */
+
+.mic-button.listening::before {
+    content: "";
+
+    position: absolute;
+
+    inset: -8px;
+
+    border-radius: 50%;
+
+    border: 2px solid rgba(239, 68, 68, 0.45);
+
+    animation: micRing 1.6s infinite;
+}
+
+
+/* Second outer ring */
+
+.mic-button.listening::after {
+    content: "";
+
+    position: absolute;
+
+    inset: -17px;
+
+    border-radius: 50%;
+
+    border: 2px solid rgba(239, 68, 68, 0.18);
+
+    animation: micRingOuter 1.6s infinite;
+}
+
+
+/* Listening text */
+
+.mic-button.listening + .mic-status {
+    color: #ef4444;
+}
+
+
+/* ==========================================
+   MIC PULSE
+========================================== */
+
+@keyframes micPulse {
+
+    0% {
+        box-shadow:
+            0 12px 30px rgba(239, 68, 68, 0.35);
+    }
+
+    50% {
+        box-shadow:
+            0 12px 45px rgba(239, 68, 68, 0.65);
+    }
+
+    100% {
+        box-shadow:
+            0 12px 30px rgba(239, 68, 68, 0.35);
+    }
+}
+
+
+/* ==========================================
+   FIRST RING ANIMATION
+========================================== */
+
+@keyframes micRing {
+
+    0% {
+        transform: scale(0.9);
+        opacity: 0.8;
+    }
+
+    70% {
+        transform: scale(1.15);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1.15);
+        opacity: 0;
+    }
+}
+
+
+/* ==========================================
+   SECOND RING ANIMATION
+========================================== */
+
+@keyframes micRingOuter {
+
+    0% {
+        transform: scale(0.9);
+        opacity: 0.5;
+    }
+
+    70% {
+        transform: scale(1.25);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1.25);
+        opacity: 0;
+    }
+}
+
+
+/* ==========================================
+   TEXTAREA
+========================================== */
+
+.speaking-card textarea {
+    width: 100%;
+    min-height: 190px;
+
+    padding: 18px;
+
+    box-sizing: border-box;
+
+    border: 1px solid #d1d5db;
+    border-radius: 15px;
+
+    resize: vertical;
+
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 1.6;
+
+    outline: none;
+
+    transition: 0.2s ease;
+}
+
+.speaking-card textarea:focus {
+    border-color: #6366f1;
+
+    box-shadow:
+        0 0 0 3px rgba(99, 102, 241, 0.1);
+}
+
+
+/* ==========================================
+   ACTION BUTTONS
+========================================== */
+
+.speaking-actions {
+    display: flex;
+
+    gap: 12px;
+
+    margin-top: 18px;
+}
+
+.clear-button,
+.check-button {
+    flex: 1;
+
+    padding: 15px;
+
+    border-radius: 13px;
+
+    font-size: 16px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+
+/* Clear */
+
+.clear-button {
+    border: 1px solid #d1d5db;
+
+    background: #ffffff;
+
+    color: #374151;
+}
+
+.clear-button:hover:not(:disabled) {
+    background: #f3f4f6;
+}
+
+
+/* Check */
+
+.check-button {
+    border: none;
+
+    background: #6366f1;
+
+    color: #ffffff;
+}
+
+.check-button:hover:not(:disabled) {
+    background: #4f46e5;
+}
+
+
+/* Disabled */
+
+.clear-button:disabled,
+.check-button:disabled {
+    opacity: 0.5;
+
+    cursor: not-allowed;
+}
+
+
+/* ==========================================
+   ERROR
+========================================== */
+
+.error-message {
+    margin-top: 20px;
+
+    padding: 15px 18px;
+
+    border-radius: 13px;
+
+    background: #fee2e2;
+
+    color: #b91c1c;
+
+    font-weight: 600;
+}
+
+
+/* ==========================================
+   RESULT
+========================================== */
+
+.analysis-result {
+    margin-top: 30px;
+
+    background: #ffffff;
+
+    padding: 30px;
+
+    border-radius: 22px;
+
+    box-shadow:
+        0 12px 35px rgba(0, 0, 0, 0.08);
+}
+
+.analysis-result h2 {
+    text-align: center;
+
+    color: #111827;
+}
+
+
+/* ==========================================
+   OVERALL SCORE
+========================================== */
+
+.overall-score {
+    text-align: center;
+
+    margin: 30px 0;
+}
+
+.overall-score strong {
+    font-size: 64px;
+
+    color: #6366f1;
+}
+
+.overall-score span {
+    margin-left: 5px;
+
+    font-size: 20px;
+
+    color: #6b7280;
+}
+
+
+/* ==========================================
+   SCORE GRID
+========================================== */
+
+.score-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 18px;
+}
+
+.score-card {
+    padding: 22px;
+
+    text-align: center;
+
+    background: #f8fafc;
+
+    border-radius: 16px;
+}
+
+.score-card h3 {
+    margin-top: 0;
+
+    color: #374151;
+}
+
+.score-card strong {
+    font-size: 34px;
+
+    color: #111827;
+}
+
+.score-card span {
+    color: #6b7280;
+}
+
+
+/* ==========================================
+   RESULT SECTION
+========================================== */
+
+.result-section {
+    margin-top: 25px;
+
+    padding: 22px;
+
+    background: #f8fafc;
+
+    border-radius: 16px;
+}
+
+.result-section h3 {
+    margin-top: 0;
+
+    color: #111827;
+}
+
+
+/* ==========================================
+   MISTAKES
+========================================== */
+
+.mistake {
+    margin-top: 12px;
+
+    padding: 16px;
+
+    background: #ffffff;
+
+    border-radius: 12px;
+
+    border-left:
+        4px solid #ef4444;
+}
+
+.mistake p {
+    margin: 7px 0;
+}
+
+.mistake small {
+    color: #6b7280;
+
+    line-height: 1.5;
+}
+
+
+/* ==========================================
+   VOCABULARY
+========================================== */
+
+.vocabulary-item {
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 15px;
+
+    margin-top: 10px;
+
+    padding: 14px;
+
+    background: #ffffff;
+
+    border-radius: 12px;
+}
+
+.vocabulary-item strong {
+    color: #4f46e5;
+}
+
+.vocabulary-item span {
+    color: #6b7280;
+}
+
+
+/* ==========================================
+   FEEDBACK
+========================================== */
+
+.feedback {
+    margin-top: 25px;
+
+    padding: 22px;
+
+    background: #eef2ff;
+
+    border-radius: 16px;
+}
+
+.feedback h3 {
+    margin-top: 0;
+
+    color: #3730a3;
+}
+
+.feedback p {
+    margin-bottom: 0;
+
+    color: #374151;
+
+    line-height: 1.6;
+}
+
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width: 650px) {
+
+    .speaking-page {
+        padding: 30px 15px;
+    }
+
+
+    .speaking-header h1 {
+        font-size: 28px;
+    }
+
+
+    .speaking-card,
+    .analysis-result {
+        padding: 20px;
+    }
+
+
+    /* Smaller microphone */
+
+    .mic-button {
+        width: 82px;
+        height: 82px;
+    }
+
+
+    .mic-icon {
+        font-size: 36px;
+    }
+
+
+    .mic-button.listening::before {
+        inset: -7px;
+    }
+
+
+    .mic-button.listening::after {
+        inset: -14px;
+    }
+
+
+    /* Scores */
+
+    .score-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* Buttons */
+
+    .speaking-actions {
+        flex-direction: column;
+    }
+
+
+    /* Vocabulary */
+
+    .vocabulary-item {
+        flex-direction: column;
+    }
+
+
+    /* Overall score */
+
+    .overall-score strong {
+        font-size: 52px;
+    }
+
+}

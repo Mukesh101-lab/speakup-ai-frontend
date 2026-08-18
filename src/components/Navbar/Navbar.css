@@ -1,0 +1,233 @@
+/* ==========================================
+   NAVBAR
+========================================== */
+
+.navbar {
+    width: 100%;
+    min-height: 70px;
+
+    padding: 0 35px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    box-sizing: border-box;
+
+    background: #ffffff;
+
+    border-bottom: 1px solid #e5e7eb;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+
+/* ==========================================
+   LOGO
+========================================== */
+
+.logo {
+    text-decoration: none;
+
+    color: #111827;
+
+    font-size: 24px;
+    font-weight: 800;
+
+    white-space: nowrap;
+}
+
+.logo span {
+    color: #6366f1;
+}
+
+
+/* ==========================================
+   NAV LINKS
+========================================== */
+
+.nav-links {
+    display: flex;
+    align-items: center;
+
+    gap: 24px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #374151;
+    font-size: 15px;
+    font-weight: 400;
+    transition: 0.2s ease;
+}
+
+.nav-links a:hover {
+    color: #6366f1;
+}
+
+
+/* ==========================================
+   NAV ACTIONS
+========================================== */
+
+.nav-actions {
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+}
+
+.login-btn,
+.signup-btn {
+    text-decoration: none;
+
+    padding: 10px 17px;
+
+    border-radius: 10px;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    transition: 0.2s ease;
+}
+
+
+/* Login */
+
+.login-btn {
+    color: #374151;
+
+    border: 1px solid #d1d5db;
+
+    background: #ffffff;
+}
+
+.login-btn:hover {
+    background: #f3f4f6;
+}
+
+
+/* Signup */
+
+.signup-btn {
+    color: #ffffff;
+
+    background: #6366f1;
+}
+
+.signup-btn:hover {
+    background: #4f46e5;
+}
+
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width: 900px) {
+
+    .navbar {
+        padding: 0 20px;
+    }
+
+    .nav-links {
+        gap: 14px;
+    }
+
+    .nav-links a {
+        font-size: 14px;
+    }
+
+    .nav-actions {
+        gap: 6px;
+    }
+
+    .login-btn,
+    .signup-btn {
+        padding: 9px 12px;
+    }
+}
+
+
+/* ==========================================
+   SMALL MOBILE
+========================================== */
+
+@media (max-width: 700px) {
+
+    .navbar {
+        flex-wrap: wrap;
+
+        padding: 15px;
+    }
+
+    .logo {
+        font-size: 21px;
+    }
+
+    .nav-links {
+        width: 100%;
+
+        order: 3;
+
+        margin-top: 15px;
+
+        padding-top: 12px;
+
+        border-top: 1px solid #e5e7eb;
+
+        justify-content: center;
+
+        gap: 18px;
+
+        overflow-x: auto;
+    }
+
+    .nav-links a {
+        white-space: nowrap;
+    }
+
+    .nav-actions {
+        margin-left: auto;
+    }
+
+    .login-btn {
+        display: none;
+    }
+
+    .signup-btn {
+        padding: 9px 13px;
+    }
+}
+
+
+/* ==========================================
+   VERY SMALL SCREEN
+========================================== */
+
+@media (max-width: 450px) {
+
+    .navbar {
+        padding: 12px;
+    }
+
+    .nav-links {
+        justify-content: flex-start;
+
+        gap: 16px;
+
+        padding-bottom: 3px;
+    }
+
+    .nav-links a {
+        font-size: 13px;
+    }
+
+    .signup-btn {
+        font-size: 13px;
+
+        padding: 8px 11px;
+    }
+}

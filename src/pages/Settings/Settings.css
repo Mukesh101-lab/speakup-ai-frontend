@@ -1,0 +1,1036 @@
+/* ==========================================
+   SETTINGS PAGE
+========================================== */
+
+.settings-page {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 55px 24px 80px;
+}
+
+
+/* ==========================================
+   HEADER
+========================================== */
+
+.settings-header {
+    margin-bottom: 35px;
+}
+
+.settings-label {
+    display: inline-block;
+    margin-bottom: 10px;
+
+    color: #6366f1;
+
+    font-size: 12px;
+    font-weight: 800;
+
+    letter-spacing: 1.5px;
+}
+
+.settings-header h1 {
+    margin: 0;
+
+    color: #111827;
+
+    font-size: 38px;
+    font-weight: 800;
+
+    letter-spacing: -1px;
+}
+
+.settings-header p {
+    margin: 10px 0 0;
+
+    color: #6b7280;
+
+    font-size: 15px;
+}
+
+
+/* ==========================================
+   SETTINGS CARD
+========================================== */
+
+.settings-card {
+    margin-bottom: 22px;
+    padding: 28px;
+
+    background: #ffffff;
+
+    border: 1px solid #e5e7eb;
+    border-radius: 18px;
+
+    box-shadow:
+        0 8px 25px rgba(15, 23, 42, 0.05);
+}
+
+
+/* ==========================================
+   CARD HEADER
+========================================== */
+
+.settings-card-header {
+    display: flex;
+    align-items: center;
+
+    gap: 15px;
+
+    padding-bottom: 22px;
+    margin-bottom: 5px;
+
+    border-bottom: 1px solid #f1f5f9;
+}
+
+.settings-card-icon {
+    width: 46px;
+    height: 46px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    background: #eef2ff;
+
+    border-radius: 12px;
+
+    font-size: 21px;
+}
+
+.settings-card-header h2 {
+    margin: 0;
+
+    color: #111827;
+
+    font-size: 19px;
+    font-weight: 750;
+}
+
+.settings-card-header p {
+    margin: 4px 0 0;
+
+    color: #6b7280;
+
+    font-size: 13px;
+}
+
+
+/* ==========================================
+   PROFILE
+========================================== */
+
+.profile-box {
+    display: flex;
+    align-items: center;
+
+    gap: 18px;
+
+    padding-top: 22px;
+}
+
+.profile-avatar {
+    width: 64px;
+    height: 64px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    background: #6366f1;
+
+    border-radius: 50%;
+
+    color: #ffffff;
+
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.profile-info {
+    flex: 1;
+}
+
+.profile-info h3 {
+    margin: 0;
+
+    color: #111827;
+
+    font-size: 18px;
+    font-weight: 750;
+}
+
+.profile-info p {
+    margin: 5px 0 0;
+
+    color: #6b7280;
+
+    font-size: 14px;
+}
+
+
+/* ==========================================
+   SETTING ROW
+========================================== */
+
+.setting-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 20px;
+
+    padding: 20px 0;
+
+    border-bottom: 1px solid #f1f5f9;
+}
+
+.setting-row:last-child {
+    border-bottom: none;
+    padding-bottom: 5px;
+}
+
+.setting-info {
+    min-width: 0;
+}
+
+.setting-title {
+    color: #111827;
+
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.setting-description {
+    margin-top: 5px;
+
+    color: #6b7280;
+
+    font-size: 13px;
+
+    line-height: 1.5;
+}
+
+
+/* ==========================================
+   TOGGLE
+========================================== */
+
+.toggle {
+    width: 48px;
+    height: 27px;
+
+    position: relative;
+
+    flex-shrink: 0;
+
+    padding: 0;
+
+    border: none;
+    border-radius: 30px;
+
+    background: #cbd5e1;
+
+    cursor: pointer;
+
+    transition:
+        background 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.toggle span {
+    width: 21px;
+    height: 21px;
+
+    position: absolute;
+
+    top: 3px;
+    left: 3px;
+
+    background: #ffffff;
+
+    border-radius: 50%;
+
+    box-shadow:
+        0 2px 5px rgba(0, 0, 0, 0.15);
+
+    transition: transform 0.25s ease;
+}
+
+.toggle.active {
+    background: #6366f1;
+
+    box-shadow:
+        0 3px 10px rgba(99, 102, 241, 0.3);
+}
+
+.toggle.active span {
+    transform: translateX(21px);
+}
+
+
+/* ==========================================
+   LEARNING ACTION
+========================================== */
+
+.settings-action {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 20px;
+
+    padding: 17px 0;
+
+    color: inherit;
+
+    text-decoration: none;
+
+    border-bottom: 1px solid #f1f5f9;
+
+    transition:
+        padding 0.2s ease,
+        background 0.2s ease;
+}
+
+.settings-action:last-child {
+    border-bottom: none;
+}
+
+.settings-action:hover {
+    padding-left: 7px;
+}
+
+.settings-action strong {
+    display: block;
+
+    color: #111827;
+
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.settings-action span {
+    display: block;
+
+    margin-top: 5px;
+
+    color: #6b7280;
+
+    font-size: 13px;
+}
+
+.settings-action > span:last-child {
+    margin: 0;
+
+    color: #6366f1;
+
+    font-size: 20px;
+    font-weight: 700;
+}
+
+
+/* ==========================================
+   ACCOUNT ACTIONS
+========================================== */
+
+.account-actions {
+    display: flex;
+    flex-direction: column;
+
+    gap: 14px;
+
+    margin-top: 24px;
+}
+
+
+/* ==========================================
+   ACCOUNT BUTTON
+========================================== */
+
+.account-button {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 16px 20px;
+
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+
+    background: #ffffff;
+
+    color: #1f2937;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    text-align: left;
+    text-decoration: none;
+
+    transition:
+        background 0.2s ease,
+        border-color 0.2s ease,
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+a.account-button {
+    text-decoration: none;
+}
+
+a.account-button:hover {
+    text-decoration: none;
+}
+
+.account-button:hover {
+    background: #f8fafc;
+
+    border-color: #cbd5e1;
+
+    transform: translateY(-1px);
+
+    box-shadow:
+        0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+.account-button:active {
+    transform: translateY(0);
+}
+
+
+
+/* ==========================================
+   CHANGE PASSWORD BUTTON
+========================================== */
+
+.account-button:first-child {
+    border-color: #dbeafe;
+
+    background: #f8fbff;
+
+    color: #2563eb;
+}
+
+.account-button:first-child:hover {
+    background: #eff6ff;
+
+    border-color: #93c5fd;
+
+    box-shadow:
+        0 5px 15px rgba(37, 99, 235, 0.08);
+}
+
+
+/* ==========================================
+   DELETE ACCOUNT BUTTON
+========================================== */
+
+.account-button.danger {
+    color: #dc2626;
+
+    background: #fffafa;
+
+    border-color: #fecaca;
+}
+
+.account-button.danger:hover {
+    background: #fef2f2;
+
+    border-color: #fca5a5;
+
+    box-shadow:
+        0 5px 15px rgba(220, 38, 38, 0.08);
+}
+
+
+/* ==========================================
+   BUTTON FOCUS
+========================================== */
+
+.account-button:focus-visible {
+    outline: 3px solid rgba(37, 99, 235, 0.2);
+
+    outline-offset: 2px;
+}
+
+
+/* ==========================================
+   SETTINGS NOTE
+========================================== */
+
+.settings-note {
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 18px 20px;
+
+    background: #f8fafc;
+
+    border: 1px solid #e2e8f0;
+
+    border-radius: 14px;
+}
+
+.settings-note span {
+    font-size: 18px;
+}
+
+.settings-note p {
+    margin: 0;
+
+    color: #64748b;
+
+    font-size: 13px;
+}
+
+
+/* ==========================================
+   TABLET
+========================================== */
+
+@media (max-width: 700px) {
+
+    .settings-page {
+        padding: 40px 18px 60px;
+    }
+
+    .settings-header h1 {
+        font-size: 32px;
+    }
+
+    .settings-card {
+        padding: 22px;
+    }
+
+    .account-actions {
+        gap: 12px;
+    }
+
+    .account-button {
+        padding: 15px 18px;
+    }
+}
+
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width: 480px) {
+
+    .settings-page {
+        padding: 30px 15px 50px;
+    }
+
+    .settings-header h1 {
+        font-size: 28px;
+    }
+
+    .settings-header p {
+        font-size: 14px;
+    }
+
+    .settings-card {
+        padding: 18px;
+
+        border-radius: 15px;
+    }
+
+    .settings-card-header {
+        gap: 11px;
+    }
+
+    .settings-card-icon {
+        width: 40px;
+        height: 40px;
+
+        font-size: 18px;
+    }
+
+    .setting-row {
+        align-items: flex-start;
+    }
+
+    .setting-description {
+        font-size: 12px;
+    }
+
+    .profile-avatar {
+        width: 54px;
+        height: 54px;
+
+        font-size: 21px;
+    }
+
+    .account-button {
+        padding: 14px 16px;
+
+        font-size: 14px;
+    }
+
+    .settings-action {
+        gap: 10px;
+    }
+
+    .settings-action strong {
+        font-size: 13px;
+    }
+
+    .settings-action span {
+        font-size: 12px;
+    }
+
+    .settings-note {
+        align-items: flex-start;
+
+        padding: 15px;
+    }
+}
+
+/* ==========================================
+   EDIT PROFILE LINK - REMOVE UNDERLINE
+========================================== */
+
+.settings-card a.account-button,
+.settings-card a.account-button:hover,
+.settings-card a.account-button:focus,
+.settings-card a.account-button:active,
+.settings-card a.account-button:visited {
+    text-decoration: none !important;
+    color: #2563eb;
+}
+
+.edit-profile-button{
+    text-decoration: none;
+}
+
+
+/* ==========================================
+   EDIT PROFILE BUTTON
+========================================== */
+
+.edit-profile-button {
+    margin-left: auto;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 10px 16px;
+
+    background: #6366f1;
+    color: #ffffff;
+
+    border: none;
+    border-radius: 9px;
+
+    text-decoration: none;
+
+    font-size: 13px;
+    font-weight: 700;
+
+    transition:
+        background 0.2s ease,
+        transform 0.2s ease;
+}
+
+.edit-profile-button:hover {
+    background: #4f46e5;
+    color: #ffffff;
+
+    text-decoration: none;
+
+    transform: translateY(-1px);
+}
+
+
+/* ==========================================
+   ACCOUNT BUTTON LINK
+========================================== */
+
+a.account-button {
+    text-decoration: none;
+}
+
+a.account-button:hover {
+    text-decoration: none;
+}
+
+
+/* ==========================================
+   DISABLED BUTTON
+========================================== */
+
+.account-button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none;
+}
+
+
+/* ==========================================
+   DARK MODE
+========================================== */
+
+body.dark-mode {
+    background: #0f172a;
+    color: #e5e7eb;
+}
+
+
+/* Main settings page */
+
+body.dark-mode .settings-page {
+    background: #0f172a;
+}
+
+
+/* Header */
+
+body.dark-mode .settings-header h1 {
+    color: #f8fafc;
+}
+
+body.dark-mode .settings-header p {
+    color: #94a3b8;
+}
+
+
+/* Cards */
+
+body.dark-mode .settings-card {
+    background: #1e293b;
+    border-color: #334155;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.25);
+}
+
+
+/* Card headings */
+
+body.dark-mode .settings-card-header {
+    border-bottom-color: #334155;
+}
+
+body.dark-mode .settings-card-header h2 {
+    color: #f8fafc;
+}
+
+body.dark-mode .settings-card-header p {
+    color: #94a3b8;
+}
+
+
+/* Profile */
+
+body.dark-mode .profile-info h3 {
+    color: #f8fafc;
+}
+
+body.dark-mode .profile-info p {
+    color: #94a3b8;
+}
+
+
+/* Setting rows */
+
+body.dark-mode .setting-row {
+    border-bottom-color: #334155;
+}
+
+body.dark-mode .setting-title {
+    color: #f8fafc;
+}
+
+body.dark-mode .setting-description {
+    color: #94a3b8;
+}
+
+
+/* Learning links */
+
+body.dark-mode .settings-action {
+    border-bottom-color: #334155;
+}
+
+body.dark-mode .settings-action strong {
+    color: #f8fafc;
+}
+
+body.dark-mode .settings-action span {
+    color: #94a3b8;
+}
+
+body.dark-mode .settings-action > span:last-child {
+    color: #818cf8;
+}
+
+
+/* Account buttons */
+
+body.dark-mode .account-button {
+    background: #1e293b;
+    border-color: #475569;
+    color: #e5e7eb;
+}
+
+body.dark-mode .account-button:hover {
+    background: #334155;
+    border-color: #64748b;
+}
+
+
+/* Change password */
+
+body.dark-mode .account-button:first-child {
+    background: #172554;
+    border-color: #1e40af;
+    color: #93c5fd;
+}
+
+
+/* Delete */
+
+body.dark-mode .account-button.danger {
+    background: #2a1515;
+    border-color: #7f1d1d;
+    color: #fca5a5;
+}
+
+
+/* Note */
+
+body.dark-mode .settings-note {
+    background: #1e293b;
+    border-color: #334155;
+}
+
+body.dark-mode .settings-note p {
+    color: #94a3b8;
+}
+
+
+/* ==========================================
+   MOBILE EDIT PROFILE
+========================================== */
+
+@media (max-width: 700px) {
+
+    .profile-box {
+        flex-wrap: wrap;
+    }
+
+    .edit-profile-button {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 8px;
+    }
+
+}
+
+
+/* ==========================================
+   GLOBAL DARK MODE
+========================================== */
+
+body.dark-mode {
+    background: #0f172a;
+    color: #e5e7eb;
+
+    transition:
+        background 0.3s ease,
+        color 0.3s ease;
+}
+
+
+/* PAGE */
+
+body.dark-mode .settings-page {
+    background: transparent;
+}
+
+
+/* HEADER */
+
+body.dark-mode .settings-header h1 {
+    color: #f8fafc;
+}
+
+body.dark-mode .settings-header p {
+    color: #94a3b8;
+}
+
+
+/* CARDS */
+
+body.dark-mode .settings-card {
+    background: #1e293b;
+    border-color: #334155;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.25);
+}
+
+
+/* CARD HEADER */
+
+body.dark-mode .settings-card-header {
+    border-bottom-color: #334155;
+}
+
+body.dark-mode .settings-card-header h2 {
+    color: #f8fafc;
+}
+
+body.dark-mode .settings-card-header p {
+    color: #94a3b8;
+}
+
+
+/* PROFILE */
+
+body.dark-mode .profile-info h3 {
+    color: #f8fafc;
+}
+
+body.dark-mode .profile-info p {
+    color: #94a3b8;
+}
+
+
+/* SETTING ROW */
+
+body.dark-mode .setting-row {
+    border-bottom-color: #334155;
+}
+
+body.dark-mode .setting-title {
+    color: #f8fafc;
+}
+
+body.dark-mode .setting-description {
+    color: #94a3b8;
+}
+
+
+/* LEARNING LINKS */
+
+body.dark-mode .settings-action {
+    border-bottom-color: #334155;
+}
+
+body.dark-mode .settings-action strong {
+    color: #f8fafc;
+}
+
+body.dark-mode .settings-action span {
+    color: #94a3b8;
+}
+
+body.dark-mode .settings-action > span:last-child {
+    color: #818cf8;
+}
+
+
+/* ACCOUNT BUTTON */
+
+body.dark-mode .account-button {
+    background: #172033;
+    border-color: #334155;
+    color: #e2e8f0;
+}
+
+body.dark-mode .account-button:hover {
+    background: #243044;
+    border-color: #475569;
+}
+
+
+/* CHANGE PASSWORD */
+
+body.dark-mode .account-button:first-child {
+    background: #172554;
+    border-color: #1e40af;
+    color: #93c5fd;
+}
+
+body.dark-mode .account-button:first-child:hover {
+    background: #1e3a8a;
+}
+
+
+/* DELETE */
+
+body.dark-mode .account-button.danger {
+    background: #2a1717;
+    border-color: #7f1d1d;
+    color: #fca5a5;
+}
+
+body.dark-mode .account-button.danger:hover {
+    background: #450a0a;
+    border-color: #991b1b;
+}
+
+
+/* NOTE */
+
+body.dark-mode .settings-note {
+    background: #172033;
+    border-color: #334155;
+}
+
+body.dark-mode .settings-note p {
+    color: #94a3b8;
+}
+
+
+/* EDIT PROFILE */
+
+body.dark-mode .edit-profile-button {
+    background: #312e81;
+    color: #c7d2fe;
+    border-color: #4338ca;
+}
+
+body.dark-mode .edit-profile-button:hover {
+    background: #3730a3;
+}
+
+
+/* TOGGLE */
+
+body.dark-mode .toggle {
+    background: #475569;
+}
+
+body.dark-mode .toggle.active {
+    background: #6366f1;
+}
+
+
+/* SMOOTH TRANSITION */
+
+body.dark-mode,
+body.dark-mode .settings-page,
+body.dark-mode .settings-card,
+body.dark-mode .settings-note,
+body.dark-mode .account-button {
+    transition:
+        background 0.3s ease,
+        color 0.3s ease,
+        border-color 0.3s ease;
+}
+

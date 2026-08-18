@@ -1,0 +1,490 @@
+.history-page {
+    min-height: 100vh;
+    padding: 50px 20px;
+    background: #f7f8fc;
+}
+
+.history-container {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+
+/* ==========================================
+   HEADER
+========================================== */
+
+.history-header {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-bottom: 35px;
+}
+
+.history-icon {
+    width: 60px;
+    height: 60px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 18px;
+
+    background: #eef2ff;
+
+    font-size: 30px;
+}
+
+.history-header h1 {
+    margin: 0 0 6px;
+
+    color: #111827;
+
+    font-size: 32px;
+}
+
+.history-header p {
+    margin: 0;
+
+    color: #6b7280;
+
+    font-size: 15px;
+}
+
+
+/* ==========================================
+   HISTORY LIST
+========================================== */
+
+.history-list {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+
+/* ==========================================
+   CARD
+========================================== */
+
+.history-card {
+    background: #ffffff;
+
+    padding: 22px;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.06);
+
+    transition: 0.2s ease;
+}
+
+.history-card:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 12px 30px rgba(0, 0, 0, 0.09);
+}
+
+
+/* ==========================================
+   CARD TOP
+========================================== */
+
+.history-card-top {
+    display: flex;
+    align-items: center;
+
+    gap: 14px;
+}
+
+.conversation-card-icon {
+    width: 48px;
+    height: 48px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 14px;
+
+    background: #eef2ff;
+
+    font-size: 23px;
+}
+
+.conversation-card-info {
+    min-width: 0;
+}
+
+.conversation-card-info h3 {
+    margin: 0 0 5px;
+
+    color: #111827;
+
+    font-size: 17px;
+
+    white-space: nowrap;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+}
+
+.conversation-card-info span {
+    color: #6b7280;
+
+    font-size: 13px;
+}
+
+
+/* ==========================================
+   PREVIEW
+========================================== */
+
+.history-preview {
+    margin-top: 18px;
+
+    padding: 15px;
+
+    border-radius: 13px;
+
+    background: #f8fafc;
+}
+
+.history-preview p {
+    margin: 7px 0;
+
+    color: #4b5563;
+
+    font-size: 14px;
+
+    line-height: 1.5;
+}
+
+.history-preview p:first-child {
+    margin-top: 0;
+}
+
+.history-preview p:last-child {
+    margin-bottom: 0;
+}
+
+.preview-user strong {
+    color: #4f46e5;
+}
+
+.preview-ai strong {
+    color: #059669;
+}
+
+
+/* ==========================================
+   CARD BOTTOM
+========================================== */
+
+.history-card-bottom {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 15px;
+
+    margin-top: 18px;
+}
+
+.history-card-bottom span {
+    color: #6b7280;
+
+    font-size: 13px;
+}
+
+.history-card-bottom button {
+    border: none;
+
+    background: transparent;
+
+    color: #4f46e5;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+}
+
+.history-card-bottom button:hover {
+    color: #3730a3;
+}
+
+
+/* ==========================================
+   EMPTY
+========================================== */
+
+.empty-history {
+    background: #ffffff;
+
+    padding: 60px 30px;
+
+    text-align: center;
+
+    border-radius: 22px;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.06);
+}
+
+.empty-icon {
+    font-size: 60px;
+
+    margin-bottom: 15px;
+}
+
+.empty-history h2 {
+    margin: 0 0 10px;
+
+    color: #111827;
+}
+
+.empty-history p {
+    margin: 0 auto 25px;
+
+    max-width: 450px;
+
+    color: #6b7280;
+
+    line-height: 1.6;
+}
+
+.empty-history button,
+.new-conversation button {
+    border: none;
+
+    padding: 13px 20px;
+
+    border-radius: 12px;
+
+    background: #6366f1;
+
+    color: #ffffff;
+
+    font-size: 15px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+.empty-history button:hover,
+.new-conversation button:hover {
+    background: #4f46e5;
+}
+
+
+/* ==========================================
+   NEW CONVERSATION
+========================================== */
+
+.new-conversation {
+    display: flex;
+
+    justify-content: center;
+
+    margin-top: 28px;
+}
+
+
+/* ==========================================
+   LOADING
+========================================== */
+
+.history-loading {
+    min-height: 70vh;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: #6b7280;
+}
+
+.history-spinner {
+    font-size: 40px;
+
+    margin-bottom: 10px;
+}
+
+
+/* ==========================================
+   ERROR
+========================================== */
+
+.history-error {
+    max-width: 500px;
+
+    margin: 100px auto;
+
+    padding: 40px 25px;
+
+    text-align: center;
+
+    background: #ffffff;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.06);
+}
+
+.history-error > div {
+    font-size: 45px;
+}
+
+.history-error h2 {
+    color: #111827;
+}
+
+.history-error p {
+    color: #6b7280;
+}
+
+.history-error button {
+    margin-top: 10px;
+
+    padding: 12px 20px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: #6366f1;
+
+    color: #ffffff;
+
+    font-weight: 700;
+
+    cursor: pointer;
+}
+
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width: 650px) {
+
+    .history-page {
+        padding: 30px 15px;
+    }
+
+    .history-header {
+        align-items: flex-start;
+    }
+
+    .history-header h1 {
+        font-size: 25px;
+    }
+
+    .history-icon {
+        width: 50px;
+        height: 50px;
+
+        font-size: 24px;
+    }
+
+    .history-card {
+        padding: 18px;
+    }
+
+    .history-card-bottom {
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+    .history-card-bottom button {
+        padding: 0;
+    }
+
+}
+
+.history-card-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.history-card-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.view-button,
+.delete-button {
+    border: none;
+    padding: 9px 14px;
+    border-radius: 9px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.view-button {
+    background: #eef2ff;
+    color: #4f46e5;
+}
+
+.view-button:hover {
+    background: #e0e7ff;
+}
+
+.delete-button {
+    background: #fee2e2;
+    color: #dc2626;
+}
+
+.delete-button:hover:not(:disabled) {
+    background: #fecaca;
+}
+
+.delete-button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+
+@media (max-width: 650px) {
+
+    .history-card-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .history-card-actions {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .view-button,
+    .delete-button {
+        width: 100%;
+    }
+
+}

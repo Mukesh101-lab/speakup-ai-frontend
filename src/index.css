@@ -1,0 +1,580 @@
+
+/* ==========================================
+   GLOBAL RESET
+========================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    transition: background-color 0.3s ease,
+                color 0.3s ease;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f8fafc;
+    color: #111827;
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease;
+}
+
+button,
+input,
+textarea,
+select {
+    font: inherit;
+}
+
+
+/* ==========================================
+   GLOBAL DARK MODE
+========================================== */
+
+body.dark-mode {
+    background: #0f172a !important;
+    color: #e5e7eb !important;
+}
+
+
+/* ==========================================
+   PAGE BACKGROUNDS
+========================================== */
+
+body.dark-mode main,
+body.dark-mode section,
+body.dark-mode .page,
+body.dark-mode .dashboard,
+body.dark-mode .settings-page,
+body.dark-mode .edit-profile-page,
+body.dark-mode .change-password-page,
+body.dark-mode .conversation-page,
+body.dark-mode .speaking-page,
+body.dark-mode .history-page,
+body.dark-mode .conversation-history-page,
+body.dark-mode .conversation-detail-page {
+    background: transparent !important;
+    color: #e5e7eb !important;
+}
+
+
+/* ==========================================
+   GLOBAL TEXT
+========================================== */
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode h5,
+body.dark-mode h6 {
+    color: #f8fafc !important;
+}
+
+body.dark-mode p {
+    color: #cbd5e1 !important;
+}
+
+body.dark-mode label {
+    color: #e2e8f0 !important;
+}
+
+body.dark-mode strong {
+    color: #f8fafc !important;
+}
+
+
+/* ==========================================
+   SPANS
+========================================== */
+
+body.dark-mode span {
+    color: inherit;
+}
+
+
+/* ==========================================
+   LINKS
+========================================== */
+
+body.dark-mode a {
+    color: #93c5fd;
+}
+
+body.dark-mode a:hover {
+    color: #bfdbfe;
+}
+
+
+/* ==========================================
+   CARDS
+========================================== */
+
+body.dark-mode .dashboard-card,
+body.dark-mode .stat-card,
+body.dark-mode .progress-card,
+body.dark-mode .settings-card,
+body.dark-mode .edit-profile-card,
+body.dark-mode .change-password-card,
+body.dark-mode .conversation-card,
+body.dark-mode .practice-card,
+body.dark-mode .history-card,
+body.dark-mode .history-item,
+body.dark-mode .conversation-item,
+body.dark-mode .conversation-card,
+body.dark-mode .recent-card,
+body.dark-mode .card {
+    background: #1e293b !important;
+    color: #e5e7eb !important;
+
+    border-color: #334155 !important;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.30) !important;
+}
+
+
+/* ==========================================
+   INPUTS
+========================================== */
+
+body.dark-mode input,
+body.dark-mode textarea,
+body.dark-mode select {
+    background: #0f172a !important;
+    color: #f8fafc !important;
+
+    border-color: #475569 !important;
+}
+
+body.dark-mode input::placeholder,
+body.dark-mode textarea::placeholder {
+    color: #64748b !important;
+}
+
+body.dark-mode input:focus,
+body.dark-mode textarea:focus,
+body.dark-mode select:focus {
+    border-color: #6366f1 !important;
+    outline-color: #6366f1;
+}
+
+
+/* ==========================================
+   DISABLED INPUT
+========================================== */
+
+body.dark-mode input:disabled,
+body.dark-mode textarea:disabled {
+    background: #1e293b !important;
+    color: #94a3b8 !important;
+    cursor: not-allowed;
+}
+
+
+/* ==========================================
+   NAVBAR
+========================================== */
+
+body.dark-mode .navbar {
+    background: #020617 !important;
+    color: #f8fafc !important;
+
+    border-color: #334155 !important;
+
+    box-shadow:
+        0 2px 10px rgba(0, 0, 0, 0.25);
+}
+
+body.dark-mode .navbar a {
+    color: #e2e8f0 !important;
+}
+
+body.dark-mode .navbar a:hover {
+    color: #ffffff !important;
+}
+
+
+/* ==========================================
+   SETTINGS
+========================================== */
+
+body.dark-mode .settings-header h1,
+body.dark-mode .settings-card-header h2,
+body.dark-mode .profile-info h3,
+body.dark-mode .setting-title {
+    color: #f8fafc !important;
+}
+
+body.dark-mode .settings-header p,
+body.dark-mode .settings-card-header p,
+body.dark-mode .profile-info p,
+body.dark-mode .setting-description {
+    color: #94a3b8 !important;
+}
+
+
+/* ==========================================
+   PROFILE
+========================================== */
+
+body.dark-mode .profile-box {
+    color: #e5e7eb !important;
+}
+
+body.dark-mode .profile-info {
+    color: #e5e7eb !important;
+}
+
+
+/* ==========================================
+   SETTINGS ACTIONS
+========================================== */
+
+body.dark-mode .settings-action {
+    color: #e5e7eb !important;
+    border-color: #334155 !important;
+}
+
+body.dark-mode .settings-action strong {
+    color: #f8fafc !important;
+}
+
+body.dark-mode .settings-action span {
+    color: #94a3b8 !important;
+}
+
+body.dark-mode .settings-action:hover {
+    background: #172033 !important;
+}
+
+
+/* ==========================================
+   ACCOUNT BUTTONS
+========================================== */
+
+body.dark-mode .account-button {
+    background: #1e293b !important;
+    color: #e2e8f0 !important;
+
+    border-color: #475569 !important;
+}
+
+body.dark-mode .account-button:hover {
+    background: #334155 !important;
+}
+
+
+/* CHANGE PASSWORD */
+
+body.dark-mode .account-button:first-child {
+    background: #172554 !important;
+    color: #93c5fd !important;
+    border-color: #1e40af !important;
+}
+
+body.dark-mode .account-button:first-child:hover {
+    background: #1e3a8a !important;
+}
+
+
+/* DELETE ACCOUNT */
+
+body.dark-mode .account-button.danger {
+    background: #2a1515 !important;
+    color: #fca5a5 !important;
+    border-color: #7f1d1d !important;
+}
+
+body.dark-mode .account-button.danger:hover {
+    background: #450a0a !important;
+}
+
+
+/* ==========================================
+   TOGGLE
+========================================== */
+
+body.dark-mode .toggle {
+    background: #475569 !important;
+}
+
+body.dark-mode .toggle span {
+    background: #ffffff !important;
+}
+
+body.dark-mode .toggle.active {
+    background: #6366f1 !important;
+}
+
+
+/* ==========================================
+   EDIT PROFILE BUTTON
+========================================== */
+
+body.dark-mode .edit-profile-button {
+    background: #1e293b !important;
+    color: #93c5fd !important;
+
+    border-color: #475569 !important;
+}
+
+body.dark-mode .edit-profile-button:hover {
+    background: #334155 !important;
+    color: #bfdbfe !important;
+}
+
+
+/* ==========================================
+   AUTH PAGES
+   LOGIN / REGISTER / GET STARTED
+========================================== */
+
+body.dark-mode .login-page,
+body.dark-mode .register-page,
+body.dark-mode .auth-page,
+body.dark-mode .get-started-page {
+    background: transparent !important;
+    color: #e5e7eb !important;
+}
+
+body.dark-mode .login-card,
+body.dark-mode .register-card,
+body.dark-mode .auth-card,
+body.dark-mode .get-started-card {
+    background: #1e293b !important;
+    color: #e5e7eb !important;
+
+    border-color: #334155 !important;
+}
+
+body.dark-mode .login-card h1,
+body.dark-mode .login-card h2,
+body.dark-mode .register-card h1,
+body.dark-mode .register-card h2,
+body.dark-mode .auth-card h1,
+body.dark-mode .auth-card h2,
+body.dark-mode .get-started-card h1,
+body.dark-mode .get-started-card h2 {
+    color: #f8fafc !important;
+}
+
+body.dark-mode .login-card p,
+body.dark-mode .register-card p,
+body.dark-mode .auth-card p,
+body.dark-mode .get-started-card p {
+    color: #94a3b8 !important;
+}
+
+
+/* ==========================================
+   HISTORY
+========================================== */
+
+body.dark-mode .history-card,
+body.dark-mode .history-item,
+body.dark-mode .conversation-item,
+body.dark-mode .conversation-card {
+    background: #1e293b !important;
+    color: #e5e7eb !important;
+
+    border-color: #334155 !important;
+}
+
+body.dark-mode .history-card h3,
+body.dark-mode .history-item h3,
+body.dark-mode .conversation-item h3,
+body.dark-mode .conversation-card h3 {
+    color: #f8fafc !important;
+}
+
+body.dark-mode .history-card p,
+body.dark-mode .history-item p,
+body.dark-mode .conversation-item p,
+body.dark-mode .conversation-card p {
+    color: #94a3b8 !important;
+}
+
+
+/* ==========================================
+   CONVERSATION
+========================================== */
+
+body.dark-mode .message,
+body.dark-mode .chat-message {
+    color: #e5e7eb !important;
+}
+
+body.dark-mode .user-message {
+    color: #ffffff !important;
+}
+
+body.dark-mode .ai-message {
+    background: #1e293b !important;
+    color: #e5e7eb !important;
+}
+
+
+/* ==========================================
+   SPEAKING
+========================================== */
+
+body.dark-mode .speaking-card,
+body.dark-mode .practice-card {
+    background: #1e293b !important;
+    color: #e5e7eb !important;
+
+    border-color: #334155 !important;
+}
+
+body.dark-mode .speaking-card p,
+body.dark-mode .practice-card p {
+    color: #94a3b8 !important;
+}
+
+
+/* ==========================================
+   SCORE / PROGRESS
+========================================== */
+
+body.dark-mode .progress-bar {
+    background: #334155 !important;
+}
+
+body.dark-mode .progress-track {
+    background: #334155 !important;
+}
+
+
+/* ==========================================
+   LOADING / ERROR / EMPTY
+========================================== */
+
+body.dark-mode .dashboard-loading,
+body.dark-mode .dashboard-error,
+body.dark-mode .no-recent-conversations,
+body.dark-mode .empty-state {
+    color: #cbd5e1 !important;
+}
+
+
+/* ==========================================
+   FOOTER
+========================================== */
+
+body.dark-mode footer {
+    background: #020617 !important;
+    color: #cbd5e1 !important;
+
+    border-color: #334155 !important;
+}
+
+body.dark-mode footer h1,
+body.dark-mode footer h2,
+body.dark-mode footer h3,
+body.dark-mode footer h4 {
+    color: #f8fafc !important;
+}
+
+body.dark-mode footer p,
+body.dark-mode footer span {
+    color: #94a3b8 !important;
+}
+
+body.dark-mode footer a {
+    color: #93c5fd !important;
+}
+
+
+/* ==========================================
+   DIVIDERS
+========================================== */
+
+body.dark-mode hr {
+    border-color: #334155 !important;
+}
+
+
+/* ==========================================
+   TABLE
+========================================== */
+
+body.dark-mode table {
+    color: #e5e7eb !important;
+}
+
+body.dark-mode th {
+    color: #f8fafc !important;
+    background: #1e293b !important;
+}
+
+body.dark-mode td {
+    color: #cbd5e1 !important;
+    border-color: #334155 !important;
+}
+
+
+/* ==========================================
+   BADGES
+========================================== */
+
+body.dark-mode .badge,
+body.dark-mode .score-badge {
+    background: #334155 !important;
+    color: #e2e8f0 !important;
+}
+
+
+/* ==========================================
+   SCROLLBAR
+========================================== */
+
+body.dark-mode::-webkit-scrollbar {
+    width: 10px;
+}
+
+body.dark-mode::-webkit-scrollbar-track {
+    background: #0f172a;
+}
+
+body.dark-mode::-webkit-scrollbar-thumb {
+    background: #475569;
+    border-radius: 10px;
+}
+
+body.dark-mode::-webkit-scrollbar-thumb:hover {
+    background: #64748b;
+}
+
+
+/* ==========================================
+   SELECTION
+========================================== */
+
+body.dark-mode ::selection {
+    background: #6366f1;
+    color: #ffffff;
+}
+
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width: 600px) {
+
+    body.dark-mode .settings-card,
+    body.dark-mode .dashboard-card,
+    body.dark-mode .history-card,
+    body.dark-mode .conversation-card,
+    body.dark-mode .edit-profile-card,
+    body.dark-mode .change-password-card {
+        background: #1e293b !important;
+    }
+
+}
+
